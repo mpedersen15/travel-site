@@ -586,13 +586,13 @@ a {
   }
 }
 
-.page-section--no-b-padding-until-medium{
+.page-section--no-b-padding-until-large{
   padding-bottom: 0;
 }
 
 @media (min-width: 1010px) {
 
-  .page-section--no-b-padding-until-medium {
+  .page-section--no-b-padding-until-large {
     padding-bottom: 4.5rem;
   }
 }
