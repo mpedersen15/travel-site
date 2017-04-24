@@ -6,7 +6,11 @@ var
 var config = {
 	mode: {
 		css: {
-			
+			render: {
+				css: {
+					template: './gulp/templates/sprite.css'
+				}
+			}
 		}
 	}
 }
