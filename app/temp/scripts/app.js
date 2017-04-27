@@ -91,6 +91,7 @@ var MobileMenu = function () {
 	function MobileMenu() {
 		_classCallCheck(this, MobileMenu);
 
+		this.siteHeader = (0, _jquery2.default)(".site-header");
 		this.menuIcon = (0, _jquery2.default)(".site-header__menu-icon");
 		this.menuContent = (0, _jquery2.default)(".site-header__menu-content");
 		this.events();
@@ -99,15 +100,13 @@ var MobileMenu = function () {
 	_createClass(MobileMenu, [{
 		key: "events",
 		value: function events() {
-			console.log('this 1', this);
 			this.menuIcon.click(this.toggleTheMenu.bind(this));
 		}
 	}, {
 		key: "toggleTheMenu",
 		value: function toggleTheMenu() {
-			console.log('this 2', this);
-			console.log('time to toggle the menu');
 			this.menuContent.toggleClass("site-header__menu-content--is-visible");
+			this.siteHeader.toggleClass("site-header--is-expanded");
 		}
 	}]);
 
