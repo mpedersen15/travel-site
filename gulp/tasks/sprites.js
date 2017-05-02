@@ -7,6 +7,11 @@ var
 ;
 
 var config = {
+	shape: {
+		spacing: {
+			padding: 1
+		}
+	},
 	mode: {
 		css: {
 			variables: {
