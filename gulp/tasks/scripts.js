@@ -8,7 +8,7 @@ gulp.task('scripts', ['modernizr'], function(callback){
 			console.log('error running script task', err.toString());
 		}
 		
-		console.log(stats.toString());
+		// console.log(stats.toString());
 		callback();
 	});
 });
